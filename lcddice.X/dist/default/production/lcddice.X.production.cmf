@@ -1,0 +1,689 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.o
+idloc IDLOC 5 2000 2000 4 2 1
+end_init CODE 0 0 0 3 2 1
+config CONFIG 4 2007 2007 1 2 1
+$dist/default/production\lcddice.X.production.o
+cinit CODE 0 7DB 7DB 25 2 1
+idloc IDLOC 5 2000 2000 4 2 1
+text1 CODE 0 3B9 3B9 E8 2 1
+text2 CODE 0 215 215 3A 2 1
+text3 CODE 0 28D 28D 44 2 1
+text4 CODE 0 317 317 47 2 1
+text5 CODE 0 2D1 2D1 46 2 1
+text6 CODE 0 1EA 1EA 2B 2 1
+text7 CODE 0 1C5 1C5 25 2 1
+text8 CODE 0 24F 24F 3E 2 1
+text9 CODE 0 176 176 10 2 1
+text10 CODE 0 186 186 1A 2 1
+text11 CODE 0 1A0 1A0 25 2 1
+text12 CODE 0 169 169 5 2 1
+text13 CODE 0 35E 35E 5B 2 1
+maintext CODE 0 4A1 4A1 33A 2 1
+cstackCOMMON COMMON 1 70 70 E 1 1
+cstackBANK0 BANK0 1 20 20 1A 1 1
+bssBANK0 BANK0 1 3A 3A 18 1 1
+idataBANK0 CODE 0 165 165 4 2 1
+strings STRING 0 3 3 74 2 1
+dataBANK0 BANK0 1 52 52 4 1 1
+clrtext CODE 0 16E 16E 8 2 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 56-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 56-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 77-164 2
+CONST 800-1FFF 2
+ENTRY 77-164 2
+ENTRY 800-1FFF 2
+CODE 77-164 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+EEDATA 2100-21FF 2
+STRCODE 77-164 2
+STRCODE 800-1FFF 2
+STRING 77-164 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\lcddice.X.production.o
+7DB cinit CODE >692:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7DB cinit CODE >695:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7DB cinit CODE >718:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7E0 cinit CODE >719:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7E1 cinit CODE >720:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7E6 cinit CODE >721:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7E7 cinit CODE >722:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7EC cinit CODE >723:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7ED cinit CODE >724:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7F2 cinit CODE >725:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7F3 cinit CODE >744:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7F4 cinit CODE >745:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7F5 cinit CODE >746:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7F6 cinit CODE >747:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7F7 cinit CODE >748:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7FC cinit CODE >754:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7FC cinit CODE >756:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+7FD cinit CODE >757:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+35E text13 CODE >5:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+35E text13 CODE >12:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+361 text13 CODE >13:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+365 text13 CODE >14:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+368 text13 CODE >14:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+36A text13 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+36C text13 CODE >17:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+370 text13 CODE >18:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+373 text13 CODE >18:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+375 text13 CODE >19:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+37B text13 CODE >20:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+37D text13 CODE >21:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+37E text13 CODE >22:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+37F text13 CODE >22:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+383 text13 CODE >22:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+385 text13 CODE >23:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+389 text13 CODE >21:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+38D text13 CODE >26:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+38F text13 CODE >26:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+393 text13 CODE >26:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+397 text13 CODE >27:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+39A text13 CODE >27:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+39D text13 CODE >28:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+39E text13 CODE >28:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+3A2 text13 CODE >28:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+3A4 text13 CODE >29:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+3AA text13 CODE >31:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+3AF text13 CODE >32:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+3B2 text13 CODE >32:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+3B4 text13 CODE >33:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+3B8 text13 CODE >34:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+169 text12 CODE >3:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+169 text12 CODE >4:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+16D text12 CODE >5:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1A0 text11 CODE >6:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1A1 text11 CODE >7:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1A4 text11 CODE >8:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1A5 text11 CODE >9:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1A6 text11 CODE >10:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1A9 text11 CODE >11:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1AA text11 CODE >12:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1AF text11 CODE >13:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1B2 text11 CODE >14:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1B6 text11 CODE >14:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1B9 text11 CODE >14:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1BB text11 CODE >14:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1BE text11 CODE >15:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1BF text11 CODE >16:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1C4 text11 CODE >17:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+186 text10 CODE >40:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+187 text10 CODE >41:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+18C text10 CODE >42:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+196 text10 CODE >44:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+19F text10 CODE >45:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+176 text9 CODE >30:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+176 text9 CODE >31:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+17C text9 CODE >32:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+185 text9 CODE >33:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+24F text8 CODE >46:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+24F text8 CODE >47:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+252 text8 CODE >48:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+253 text8 CODE >49:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+254 text8 CODE >50:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+25D text8 CODE >51:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+260 text8 CODE >52:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+266 text8 CODE >53:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+26F text8 CODE >54:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+275 text8 CODE >55:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+27B text8 CODE >56:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+281 text8 CODE >57:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+286 text8 CODE >58:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+28C text8 CODE >59:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1C5 text7 CODE >18:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1C6 text7 CODE >19:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1C9 text7 CODE >20:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1CA text7 CODE >21:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1CB text7 CODE >22:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1CE text7 CODE >23:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1CF text7 CODE >24:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1D4 text7 CODE >25:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1D7 text7 CODE >26:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1DB text7 CODE >26:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1DE text7 CODE >26:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1E0 text7 CODE >26:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1E3 text7 CODE >27:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1E4 text7 CODE >28:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1E9 text7 CODE >29:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1EA text6 CODE >34:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1EA text6 CODE >35:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1EF text6 CODE >36:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+1F0 text6 CODE >37:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+200 text6 CODE >37:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+204 text6 CODE >36:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+210 text6 CODE >36:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+214 text6 CODE >39:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+2D1 text5 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2D1 text5 CODE >119:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2D9 text5 CODE >121:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2DD text5 CODE >122:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2E0 text5 CODE >122:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2E1 text5 CODE >122:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2E3 text5 CODE >122:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2E7 text5 CODE >122:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2E8 text5 CODE >122:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2EA text5 CODE >122:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2EE text5 CODE >122:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2EF text5 CODE >122:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2F1 text5 CODE >122:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2F4 text5 CODE >123:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2F6 text5 CODE >123:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2FD text5 CODE >124:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+2FE text5 CODE >124:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+304 text5 CODE >124:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+306 text5 CODE >125:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+30A text5 CODE >125:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+30E text5 CODE >128:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+316 text5 CODE >129:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+317 text4 CODE >12:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\rand.c
+317 text4 CODE >14:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\rand.c
+338 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\rand.c
+33B text4 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\rand.c
+33F text4 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\rand.c
+343 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\rand.c
+346 text4 CODE >16:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\rand.c
+35D text4 CODE >17:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\rand.c
+28D text3 CODE >5:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+28D text3 CODE >13:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+28F text3 CODE >14:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+295 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+297 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+298 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+299 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+29D text3 CODE >17:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+29F text3 CODE >18:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2A3 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2A7 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2A8 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2AC text3 CODE >21:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2AE text3 CODE >22:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2B0 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2B4 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2B8 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2BB text3 CODE >23:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2BE text3 CODE >24:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2BF text3 CODE >26:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2C0 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2C4 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2C6 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2CC text3 CODE >29:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+2D0 text3 CODE >30:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+215 text2 CODE >5:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+215 text2 CODE >12:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+21B text2 CODE >13:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+21D text2 CODE >14:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+21E text2 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+21F text2 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+223 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+225 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+229 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+22D text2 CODE >19:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+22F text2 CODE >19:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+233 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+237 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+23A text2 CODE >20:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+23D text2 CODE >21:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+23E text2 CODE >21:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+242 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+244 text2 CODE >22:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+24A text2 CODE >24:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+24E text2 CODE >25:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+3B9 text1 CODE >505:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+3BC text1 CODE >550:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+3C0 text1 CODE >553:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+3C1 text1 CODE >555:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+3C7 text1 CODE >558:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+3D2 text1 CODE >559:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+3D3 text1 CODE >565:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+3D4 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+3E3 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+3E8 text1 CODE >848:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+3EB text1 CODE >848:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+3EE text1 CODE >848:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+3F1 text1 CODE >1285:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+3FD text1 CODE >1287:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+401 text1 CODE >1288:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+405 text1 CODE >1289:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+408 text1 CODE >1289:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+40A text1 CODE >1331:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+40C text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+41F text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+423 text1 CODE >1332:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+428 text1 CODE >1333:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+432 text1 CODE >1464:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+438 text1 CODE >1465:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+443 text1 CODE >1498:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+447 text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+448 text1 CODE >1515:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+476 text1 CODE >1550:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+481 text1 CODE >1500:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+48A text1 CODE >553:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+49C text1 CODE >1564:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+4A0 text1 CODE >1567:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+4A1 maintext CODE >20:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+4A1 maintext CODE >22:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+4A5 maintext CODE >23:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+4A6 maintext CODE >24:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+4A7 maintext CODE >25:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+4AC maintext CODE >26:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+4B8 maintext CODE >27:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+4C1 maintext CODE >28:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+4CD maintext CODE >29:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+4D6 maintext CODE >32:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+4DA maintext CODE >33:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+4DE maintext CODE >34:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+4E3 maintext CODE >35:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+4E8 maintext CODE >36:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+4EC maintext CODE >37:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+508 maintext CODE >37:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+50C maintext CODE >38:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+51A maintext CODE >39:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+522 maintext CODE >40:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+52B maintext CODE >41:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+536 maintext CODE >42:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+53A maintext CODE >42:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+543 maintext CODE >42:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+547 maintext CODE >42:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+54B maintext CODE >43:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+556 maintext CODE >45:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+55C maintext CODE >46:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+561 maintext CODE >47:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+566 maintext CODE >48:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+56A maintext CODE >49:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+586 maintext CODE >49:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+58A maintext CODE >50:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+598 maintext CODE >51:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+5A0 maintext CODE >52:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+5A9 maintext CODE >53:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+5B4 maintext CODE >54:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+5B8 maintext CODE >54:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+5C1 maintext CODE >54:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+5C5 maintext CODE >54:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+5C9 maintext CODE >55:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+5D4 maintext CODE >57:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+5DA maintext CODE >58:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+5DF maintext CODE >59:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+5E4 maintext CODE >60:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+5E8 maintext CODE >61:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+604 maintext CODE >61:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+608 maintext CODE >62:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+616 maintext CODE >63:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+622 maintext CODE >64:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+62B maintext CODE >65:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+636 maintext CODE >66:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+63A maintext CODE >66:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+643 maintext CODE >66:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+647 maintext CODE >66:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+64B maintext CODE >67:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+653 maintext CODE >68:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+657 maintext CODE >69:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+673 maintext CODE >69:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+677 maintext CODE >70:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+685 maintext CODE >71:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+691 maintext CODE >72:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+69A maintext CODE >73:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6A5 maintext CODE >74:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6A9 maintext CODE >74:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6B2 maintext CODE >74:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6B6 maintext CODE >74:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6BA maintext CODE >75:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6C5 maintext CODE >76:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6C5 maintext CODE >77:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6C9 maintext CODE >78:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6CD maintext CODE >79:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6D2 maintext CODE >81:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6D8 maintext CODE >82:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6DD maintext CODE >83:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6E2 maintext CODE >84:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6EE maintext CODE >85:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+6F7 maintext CODE >86:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+703 maintext CODE >87:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+70C maintext CODE >94:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+710 maintext CODE >95:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+714 maintext CODE >96:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+716 maintext CODE >97:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+71B maintext CODE >98:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+720 maintext CODE >99:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+72C maintext CODE >100:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+735 maintext CODE >101:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+741 maintext CODE >102:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+74A maintext CODE >103:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+758 maintext CODE >104:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+75C maintext CODE >104:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+765 maintext CODE >104:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+769 maintext CODE >104:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+76D maintext CODE >105:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+76D maintext CODE >107:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+773 maintext CODE >108:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+775 maintext CODE >109:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+77A maintext CODE >110:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+77F maintext CODE >111:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+78B maintext CODE >112:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+794 maintext CODE >113:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+7A0 maintext CODE >114:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+7A9 maintext CODE >115:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+7B7 maintext CODE >116:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+7BB maintext CODE >116:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+7C4 maintext CODE >116:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+7C8 maintext CODE >116:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+7CC maintext CODE >118:C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+16E clrtext CODE >731:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+16E clrtext CODE >732:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+16F clrtext CODE >733:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+16F clrtext CODE >734:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+170 clrtext CODE >735:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+171 clrtext CODE >736:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+172 clrtext CODE >737:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+173 clrtext CODE >738:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+174 clrtext CODE >739:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+175 clrtext CODE >740:C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\lcddice.X.production.o
+___lwmod@counter 7D 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_veri_yolla 3D4 0 CODE 0 text7 dist/default/production\lcddice.X.production.o
+main@i 38 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+main@r 30 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.o
+_main 942 0 CODE 0 maintext dist/default/production\lcddice.X.production.o
+_rand 62E 0 CODE 0 text4 dist/default/production\lcddice.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\lcddice.X.production.o
+start 0 0 CODE 0 init C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.o
+?___lmul 70 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__end_of_lcd_hazirla 51A 0 CODE 0 text8 dist/default/production\lcddice.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 2C 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+__end_of_lcd_gotoxy 340 0 CODE 0 text10 dist/default/production\lcddice.X.production.o
+__end_of_lcd_komut 38A 0 CODE 0 text11 dist/default/production\lcddice.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.o
+lcd_komut@c 72 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\lcddice.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+_lcd_komut 340 0 CODE 0 text11 dist/default/production\lcddice.X.production.o
+__end_of_lcd_sil 30C 0 CODE 0 text9 dist/default/production\lcddice.X.production.o
+__end_of_lcd_yaz 42A 0 CODE 0 text6 dist/default/production\lcddice.X.production.o
+veri_yolla@c 72 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+__end_of___lmul 62E 0 CODE 0 text5 dist/default/production\lcddice.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+___lwmod@divisor 78 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+__end_of___awmod 772 0 CODE 0 text13 dist/default/production\lcddice.X.production.o
+__end_of___lwdiv 5A2 0 CODE 0 text3 dist/default/production\lcddice.X.production.o
+__end_of___lwmod 49E 0 CODE 0 text2 dist/default/production\lcddice.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.o
+___stacklo 0 0 ABS 0 - C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.o
+_dpowers 26 0 STRING 0 strings dist/default/production\lcddice.X.production.o
+___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+___lwmod@dividend 7A 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+start_initialization FB6 0 CODE 0 cinit dist/default/production\lcddice.X.production.o
+clear_ram0 2DC 0 CODE 0 clrtext dist/default/production\lcddice.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hidloc 4008 0 IDLOC 5 idloc -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 24 0 STRING 0 strings dist/default/production\lcddice.X.production.o
+___lwdiv@counter 77 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+lcd_yaz@s 73 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+__end_of_sprintf 942 0 CODE 0 text1 dist/default/production\lcddice.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FB6 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 5 idloc -
+__Lstack 0 0 STACK 2 stack -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+___lmul 5A2 0 CODE 0 text5 dist/default/production\lcddice.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_RB0 30 0 ABS 0 - dist/default/production\lcddice.X.production.o
+_RB1 31 0 ABS 0 - dist/default/production\lcddice.X.production.o
+_RB2 32 0 ABS 0 - dist/default/production\lcddice.X.production.o
+_RD0 40 0 ABS 0 - dist/default/production\lcddice.X.production.o
+_RD1 41 0 ABS 0 - dist/default/production\lcddice.X.production.o
+_RD2 42 0 ABS 0 - dist/default/production\lcddice.X.production.o
+__S0 800 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+sprintf@val 29 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+__Lintentry 0 0 CODE 0 intentry -
+__stringtab 6 0 STRING 0 strings dist/default/production\lcddice.X.production.o
+_lcd_sil 2EC 0 CODE 0 text9 dist/default/production\lcddice.X.production.o
+_lcd_yaz 3D4 0 CODE 0 text6 dist/default/production\lcddice.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Karaca\AppData\Local\Temp\xcAs8gg.o
+__pdataBANK0 52 0 BANK0 1 dataBANK0 dist/default/production\lcddice.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@counter 2B 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+sprintf@flag 27 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+sprintf@prec 28 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+__ptext10 30C 0 CODE 0 text10 dist/default/production\lcddice.X.production.o
+__ptext11 340 0 CODE 0 text11 dist/default/production\lcddice.X.production.o
+__ptext12 2D2 0 CODE 0 text12 dist/default/production\lcddice.X.production.o
+__ptext13 6BC 0 CODE 0 text13 dist/default/production\lcddice.X.production.o
+___awmod 6BC 0 CODE 0 text13 dist/default/production\lcddice.X.production.o
+___lwdiv 51A 0 CODE 0 text3 dist/default/production\lcddice.X.production.o
+___lwmod 42A 0 CODE 0 text2 dist/default/production\lcddice.X.production.o
+__pmaintext 942 0 CODE 0 maintext dist/default/production\lcddice.X.production.o
+___lmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+?_rand 20 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+main@r_76 32 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+main@r_78 34 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+main@r_80 36 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+__end_of__stringtab 26 0 STRING 0 strings dist/default/production\lcddice.X.production.o
+_lcd_hazirla 49E 0 CODE 0 text8 dist/default/production\lcddice.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\lcddice.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+?___awmod 27 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+?___lwdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+?___lwmod 78 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@dividend 29 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+__ptext1 772 0 CODE 0 text1 dist/default/production\lcddice.X.production.o
+__ptext2 42A 0 CODE 0 text2 dist/default/production\lcddice.X.production.o
+__ptext3 51A 0 CODE 0 text3 dist/default/production\lcddice.X.production.o
+__ptext4 62E 0 CODE 0 text4 dist/default/production\lcddice.X.production.o
+__ptext5 5A2 0 CODE 0 text5 dist/default/production\lcddice.X.production.o
+__ptext6 3D4 0 CODE 0 text6 dist/default/production\lcddice.X.production.o
+__ptext7 38A 0 CODE 0 text7 dist/default/production\lcddice.X.production.o
+__ptext8 49E 0 CODE 0 text8 dist/default/production\lcddice.X.production.o
+__ptext9 2EC 0 CODE 0 text9 dist/default/production\lcddice.X.production.o
+_sprintf 772 0 CODE 0 text1 dist/default/production\lcddice.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+sprintf@ap 26 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+sprintf@sp 2B 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\lcddice.X.production.o
+___awmod@divisor 27 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 2CA 0 CODE 0 idataBANK0 dist/default/production\lcddice.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+___lmul@product 79 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+___lmul@multiplicand 74 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+lcd_gotoxy@x 74 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+lcd_gotoxy@y 73 0 COMMON 1 cstackCOMMON dist/default/production\lcddice.X.production.o
+sprintf@c 2C 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+sprintf@f 20 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+__end_of_main FB6 0 CODE 0 maintext dist/default/production\lcddice.X.production.o
+__end_of_rand 6BC 0 CODE 0 text4 dist/default/production\lcddice.X.production.o
+_veri_yolla 38A 0 CODE 0 text7 dist/default/production\lcddice.X.production.o
+__end_of_dpowers 3A 0 STRING 0 strings dist/default/production\lcddice.X.production.o
+_Dice1 46 0 BANK0 1 bssBANK0 dist/default/production\lcddice.X.production.o
+_Dice2 3A 0 BANK0 1 bssBANK0 dist/default/production\lcddice.X.production.o
+__end_of_bekle 2DC 0 CODE 0 text12 dist/default/production\lcddice.X.production.o
+?_sprintf 20 0 BANK0 1 cstackBANK0 dist/default/production\lcddice.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\lcddice.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\lcddice.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\lcddice.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\lcddice.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\lcddice.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_bekle 2D2 0 CODE 0 text12 dist/default/production\lcddice.X.production.o
+_randx 52 0 BANK0 1 dataBANK0 dist/default/production\lcddice.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization FB6 0 CODE 0 cinit dist/default/production\lcddice.X.production.o
+__pbssBANK0 3A 0 BANK0 1 bssBANK0 dist/default/production\lcddice.X.production.o
+__pstrings 6 0 STRING 0 strings dist/default/production\lcddice.X.production.o
+_lcd_gotoxy 30C 0 CODE 0 text10 dist/default/production\lcddice.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7DB FB6 25 2
+text1 0 3B9 772 E8 2
+text2 0 215 42A 3A 2
+text3 0 28D 51A 44 2
+text4 0 317 62E 47 2
+text5 0 2D1 5A2 46 2
+text6 0 1EA 3D4 2B 2
+text7 0 1C5 38A 25 2
+text8 0 24F 49E 3E 2
+text9 0 176 2EC 10 2
+text10 0 186 30C 1A 2
+text11 0 1A0 340 25 2
+text12 0 169 2D2 5 2
+text13 0 35E 6BC 5B 2
+maintext 0 4A1 942 33A 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 36 1
+reset_vec 0 0 0 3 2
+idataBANK0 0 165 2CA 4 2
+strings 0 3 6 74 2
+clrtext 0 16E 2DC 8 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

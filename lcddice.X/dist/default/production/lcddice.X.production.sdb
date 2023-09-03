@@ -1,0 +1,201 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"505 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"12 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\rand.c
+[v _rand rand `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"3 C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+[v _bekle bekle `(v  1 e 1 0 ]
+"6
+[v _lcd_komut lcd_komut `(v  1 e 1 0 ]
+"18
+[v _veri_yolla veri_yolla `(v  1 e 1 0 ]
+"30
+[v _lcd_sil lcd_sil `(v  1 e 1 0 ]
+"34
+[v _lcd_yaz lcd_yaz `(v  1 e 1 0 ]
+"40
+[v _lcd_gotoxy lcd_gotoxy `(v  1 e 1 0 ]
+"46
+[v _lcd_hazirla lcd_hazirla `(v  1 e 1 0 ]
+"20 C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+[v _main main `(v  1 e 1 0 ]
+"279 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"341
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1376
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1438
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1500
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2679
+[v _RB0 RB0 `VEb  1 e 0 @48 ]
+"2682
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"2685
+[v _RB2 RB2 `VEb  1 e 0 @50 ]
+"2754
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2757
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2760
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"358 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"3 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\rand.c
+[v _randx randx `l  1 s 4 randx ]
+"17 C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcddice.c
+[v _Dice1 Dice1 `[6]i  1 e 12 0 ]
+"18
+[v _Dice2 Dice2 `[6]i  1 e 12 0 ]
+"20
+[v _main main `(v  1 e 1 0 ]
+{
+"69
+[v main@r_80 r `i  1 a 2 22 ]
+"61
+[v main@r_78 r `i  1 a 2 20 ]
+"49
+[v main@r_76 r `i  1 a 2 18 ]
+"37
+[v main@r r `i  1 a 2 16 ]
+"21
+[v main@i i `i  1 a 2 24 ]
+"120
+} 0
+"505 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"545
+[v sprintf@val val `ui  1 a 2 9 ]
+"512
+[v sprintf@c c `uc  1 a 1 12 ]
+"521
+[v sprintf@prec prec `c  1 a 1 8 ]
+"525
+[v sprintf@flag flag `uc  1 a 1 7 ]
+"507
+[v sprintf@ap ap `[1]*.4v  1 a 1 6 ]
+"505
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCuc  1 p 1 0 ]
+"550
+[v sprintf@sp sp `*.4uc  1 a 1 11 ]
+"1567
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"12 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\rand.c
+[v _rand rand `(i  1 e 2 0 ]
+{
+"17
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 9 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0
+"34 C:\Users\Karaca\Desktop\PIC16F877A\lcddice.X\lcd_lib.c
+[v _lcd_yaz lcd_yaz `(v  1 e 1 0 ]
+{
+[v lcd_yaz@s s `*.26DCuc  1 p 2 3 ]
+"39
+} 0
+"18
+[v _veri_yolla veri_yolla `(v  1 e 1 0 ]
+{
+[v veri_yolla@c c `uc  1 a 1 wreg ]
+[v veri_yolla@c c `uc  1 a 1 wreg ]
+[v veri_yolla@c c `uc  1 a 1 2 ]
+"29
+} 0
+"46
+[v _lcd_hazirla lcd_hazirla `(v  1 e 1 0 ]
+{
+"59
+} 0
+"30
+[v _lcd_sil lcd_sil `(v  1 e 1 0 ]
+{
+"33
+} 0
+"40
+[v _lcd_gotoxy lcd_gotoxy `(v  1 e 1 0 ]
+{
+[v lcd_gotoxy@x x `uc  1 a 1 wreg ]
+[v lcd_gotoxy@x x `uc  1 a 1 wreg ]
+[v lcd_gotoxy@y y `uc  1 p 1 3 ]
+[v lcd_gotoxy@x x `uc  1 a 1 4 ]
+"45
+} 0
+"6
+[v _lcd_komut lcd_komut `(v  1 e 1 0 ]
+{
+[v lcd_komut@c c `uc  1 a 1 wreg ]
+[v lcd_komut@c c `uc  1 a 1 wreg ]
+[v lcd_komut@c c `uc  1 a 1 2 ]
+"17
+} 0
+"3
+[v _bekle bekle `(v  1 e 1 0 ]
+{
+"5
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 12 ]
+[v ___awmod@counter counter `uc  1 a 1 11 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 7 ]
+[v ___awmod@dividend dividend `i  1 p 2 9 ]
+"34
+} 0
